@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+        <tr>
+            <th>CODIGO</th>
+            <th>NOMBRE</th>
+            <th>OFICIO</th>
+            <th>FECHA ALTA</th>
+            <th>SALARIO</th>
+            <th>COMISION</th>
+            <th>DEPARTAMENTO</th>
+        </tr>
+        {% for e in listado_Empleados%}
+
+            <tr>
+                <td>{{e.id}}</td>
+                <td>{{e.name}}</td>
+                <td>{{e.job}}</td>
+                <td>{{e.alta}}</td>
+                <td>{{e.sal}}</td>
+                <td>{{e.com}}</td>
+                <td>{{e.dept}}</td>
+            </tr>
+       {% endfor%}
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+        <tr>
+            <th>CODIGO</th>
+            <th>NOMBRE</th>
+            <th>DIRECCION</th>
+            <th>TELEFONO</th>
+            <th>CAMAS</th>
+        </tr>
+        {% for h in listado_Hospitales%}
+
+            <tr>
+                <td>{{h.id}}</td>
+                <td>{{h.name}}</td>
+                <td>{{h.dir}}</td>
+                <td>{{h.tel}}</td>
+                <td>{{h.beds}}</td>
+            </tr>
+       {% endfor%}
+    </table>
+
+</body>
+</html>
