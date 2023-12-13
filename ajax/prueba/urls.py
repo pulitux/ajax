@@ -7,4 +7,3 @@ urlpatterns=[
     path('viewPersonas',views.perso,name='perso'),
     path('viewLenguajes',views.lenguaj,name='lenguaj'),
 ]
-

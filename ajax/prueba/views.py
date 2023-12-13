@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, "gestion/Inicio.html")
+    return render(request, "pru/index.html")
 
 def perso(request):
     listaPersonas = [
@@ -26,7 +26,7 @@ def perso(request):
     contexto = {
         'listado_Personas': listaPersonas
     }
-    return render(request, "gestion/Personas.html", contexto)
+    return render(request, "pru/personas.html", contexto)
 
 
 def lenguaj(request):
@@ -52,4 +52,4 @@ def lenguaj(request):
     contexto = {
         'listado_Lenguajes': listaLenguajes
     }
-    return render(request, "gestion/Lenguajes.html", contexto)
+    return render(request, "pru/lenguajes.html", contexto)
